@@ -16,7 +16,7 @@ int main()
     
     for (int i = 0; i < SIZE; i++)
     {
-        Type x = 2.0 * M_PI * (Type)i / (SIZE - 1);
+        Type x = 2.0 * (Type)M_PI * (Type)i / (Type)(SIZE - 1);
         arr_sin[i] = std::sin(x);
         sum_sin += arr_sin[i];
     }
@@ -24,3 +24,4 @@ int main()
     std::cout << sum_sin << std::endl;
     return 0;
 }
+
